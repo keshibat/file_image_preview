@@ -1,38 +1,282 @@
-.App {
+.container {
+  padding: 2rem 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: left;
+}
+
+.title_div {
+  margin-right: 160px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+.label_one {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px dotted black;
+  border-radius: 5px;
+  width: 30rem;
+  height: 20rem;
+  cursor: pointer;
+  font-size: large;
+  background-color: rgb(243, 243, 241);
+}
+
+.label_one_span {
+  font-weight: lighter;
+  font-size: small;
+  padding-top: 0.5rem;
+}
+
+.botton_three_container {
+  width: 30rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem 0;
+
+}
+
+.label_two {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px dotted black;
+  border-radius: 5px;
+  width: 9rem;
+  height: 10rem;
+  cursor: pointer;
+  font-size: large;
+  background-color: rgb(243, 243, 241);
+}
+
+.label_two_span {
+  font-weight: lighter;
+  font-size: small;
+  padding-top: 0.5rem;
+}
+
+.label_three {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px dotted black;
+  border-radius: 5px;
+  width: 9rem;
+  height: 10rem;
+  cursor: pointer;
+  font-size: large;
+  background-color: rgb(243, 243, 241);
+}
+
+.label_three_span {
+  font-weight: lighter;
+  font-size: small;
+  padding-top: 0.5rem;
+}
+
+.label_four {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px dotted black;
+  border-radius: 5px;
+  width: 9rem;
+  height: 10rem;
+  cursor: pointer;
+  font-size: large;
+  background-color: rgb(243, 243, 241);
+}
+
+.label_four_span {
+  font-weight: lighter;
+  font-size: small;
+  padding-top: 0.5rem;
+}
+
+
+
+input {
+  display: none;
+}
+
+img {
+  padding: 0;
+  margin: 0;
+}
+
+.images {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  margin: 1rem 0.5rem;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+}
+
+.image button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  border: none;
+  color: rgb(128, 240, 234);
+  border-radius: 50%;
+  background-color: white;
+  height: 30px;
+  width: 30px;
+}
+
+.image button:hover {
+  background-color: rgb(186, 236, 218);
+}
+
+.image p {
+  padding: 0 0.5rem;
+  margin: 0;
+}
+
+.upload-btn {
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  border: none;
+  border-radius: 20px;
+  width: 10rem;
+  height: 3rem;
+  color: white;
+  background-color: rgb(214, 89, 129);
+}
+
+label:hover,
+.upload-btn:hover {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+.error {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.error span {
+  color: red;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+
+.button-div {
+  margin-right: 330px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* CSS */
+.button-18 {
+  align-items: center;
+  background-color: #12bfc5;
+  border: 0;
+  border-radius: 100px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: -apple-system, system-ui, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 20px;
+  max-width: 480px;
+  min-height: 40px;
+  min-width: 0px;
+  overflow: hidden;
+  padding: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  touch-action: manipulation;
+  transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+}
+
+.button-18:hover,
+.button-18:focus {
+  background-color: #0fa5ab;
+  color: #ffffff;
+}
+
+.button-18:active {
+  background-color: #0fa5ab;
+  color: rgb(255, 255, 255, .7);
+}
+
+.button-18:disabled {
+  cursor: not-allowed;
+  background: rgba(0, 0, 0, .08);
+  color: rgba(0, 0, 0, .3);
+}
+
+.close_icon {
+  position: relative;
+  height: 150px;
+  /* this can be anything */
+  width: 150px;
+  /* ...but maintain 1:1 aspect ratio */
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+.batsu {
+  display: block;
+  width: 30px;
+  /*枠の大きさ*/
+  height: 30px;
+  /*枠の大きさ*/
+  background: white;
+  position: relative;
+  border-radius: 50%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.batsu::before,
+.batsu::after {
+  content: "";
+  display: block;
+  width: 100%;
+  /*バツ線の長さ*/
+  height: 4px;
+  /*バツ線の太さ*/
+  background: rgb(128, 240, 234);
+  transform: rotate(45deg);
+  transform-origin: 0% 50%;
+  position: absolute;
+  top: calc(14% - 5px);
+  left: 14%;
 }
+
+.batsu::after {
+  transform: rotate(-45deg);
+  transform-origin: 100% 50%;
+  left: auto;
+  right: 14%;
+}
+
